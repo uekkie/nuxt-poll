@@ -25,7 +25,7 @@ function handleClick() {
       <button @click="handleClick" :disabled="props.disabled">
         投票する
       </button>
-      <div class="point">
+      <div class="poll-point">
         {{ point }}
       </div>
     </div>
@@ -47,5 +47,9 @@ function handleClick() {
   gap: 30px;
   align-items: center;
   margin-right: 2rem;
+}
+
+.poll-point {
+  font-size: x-large;
 }
 </style>
