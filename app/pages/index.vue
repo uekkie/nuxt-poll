@@ -23,19 +23,19 @@ const people = [
 
     <div>
       のこりポイント
-      <span class="point">
+      <span class="remain-point">
         {{ remainPoints }}
       </span>
     </div>
 
     <div v-for="name of people">
-      <Item :name="name" :disabled="remainPoints === 0" @update="dec" />
+      <Item class='item' :name="name" :disabled="remainPoints === 0" @update="dec" />
     </div>
   </div>
 </template>
 
 <style lang="css">
-.point {
+.remain-point {
   font-size: x-large;
 }
 </style>
